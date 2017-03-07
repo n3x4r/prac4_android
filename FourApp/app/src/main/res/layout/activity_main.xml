@@ -22,15 +22,15 @@
         android:textColor="#000000"/>
 
     <Button
-        android:id="@+id/inicio"
+        android:id="@+id/sound1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_inicio"
+        android:text="@string/btn_sound1"
         android:layout_gravity="center"/>
 
     <Button
-        android:id="@+id/pause"
-        android:text="@string/btn_resumen"
+        android:id="@+id/sound2"
+        android:text="@string/btn_sound2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"/>

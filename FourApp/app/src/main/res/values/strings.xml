@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">FourApp</string>
-    <string name="btn_inicio">Start</string>
-    <string name="btn_resumen">Pause</string>
+    <string name="btn_sound1">Start sound</string>
+    <string name="btn_sound2">Start song</string>
     <string name="btn_stop">Stop</string>
     <string name="title_services">Utilizacion de Servicios</string>
 
