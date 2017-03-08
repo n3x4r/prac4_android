@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -44,12 +45,14 @@ public class TheService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startid) {
-        int id = intent.getExtras().getInt(SONG_ID);
+        int id = intent.getExtras().getInt("ID");
+        String mss= intent.getExtras().getString("SOUND");
         player = MediaPlayer.create(this, id);
         player.start();
         player.setLooping(true);
         mMediaPlayerList.add(player);
         Toast.makeText(this, "Servicio Iniciado", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, mss, Toast.LENGTH_LONG).show();
 
         return startid;
     }
