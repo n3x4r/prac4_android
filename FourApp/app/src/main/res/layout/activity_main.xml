@@ -23,30 +23,42 @@
 
     <Button
         android:id="@+id/sound1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_sound1"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:drawableRight="@drawable/ic_action_name"/>
 
     <Button
         android:id="@+id/sound2"
         android:text="@string/btn_sound2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:drawableRight="@drawable/ic_action_name"/>
 
     <Button
         android:id="@+id/stop"
         android:text="@string/btn_stop"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+       />
 
-    <Spinner
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/list_songs"
+        android:id="@+id/uri"
+        android:text="@string/URI"
+       >
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_songs"
+        android:text="@string/ChooseSong"
         >
-    </Spinner>
+    </Button>
 
 </LinearLayout>

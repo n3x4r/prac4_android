@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.carlosergio.fourapp">
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission." />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,7 +22,12 @@
             </intent-filter>
         </activity>
         <service android:enabled="true" android:name=".TheService" />
-        <receiver android:name=".MySoundReceiver"/>
+        <receiver android:name=".MySoundReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE"></action>
+                <action android:name="android.intent.action.HEADSET_PLUG"></action>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

@@ -4,6 +4,14 @@
     <string name="btn_sound2">Start song</string>
     <string name="btn_stop">Stop</string>
     <string name="title_services">Utilizacion de Servicios</string>
+    <string name="broadcast_stop">Intent recibido - Detencion reproduccion</string>
+    <string name="broadcast_start">Intent recibido - Inicio reproduccion</string>
+    <string name="service_create">Servicio Creado</string>
+    <string name="service_init">Servicio Iniciado</string>
+    <string name="service_destroy">Servicio Detenido</string>
+    <string name="ChooseSong">Seleccionar Audio</string>
+    <string name="URI">Reproducir Uri</string>
+
 
 
 </resources>
